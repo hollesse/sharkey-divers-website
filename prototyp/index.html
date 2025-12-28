@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharkey Divers Weilburg e.V. - Tauchclub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ocean: {
+                            50: '#e6f7ff',
+                            100: '#bae7ff',
+                            200: '#91d5ff',
+                            300: '#69c0ff',
+                            400: '#40a9ff',
+                            500: '#1890ff',
+                            600: '#096dd9',
+                            700: '#0050b3',
+                            800: '#003a8c',
+                            900: '#002766',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-ocean-700">
+                        <span class="text-ocean-600">🦈</span> Sharkey Divers
+                    </div>
+                </div>
+
+```
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-ocean-600 transition">Startseite</a>
+                <a href="#schnuppern" class="text-gray-700 hover:text-ocean-600 transition">Schnuppertauchen</a>
+                <a href="#ausbildung" class="text-gray-700 hover:text-ocean-600 transition">Ausbildung</a>
+                <a href="#aktivitaeten" class="text-gray-700 hover:text-ocean-600 transition">Aktivitäten</a>
+                <a href="#mitgliedschaft" class="text-gray-700 hover:text-ocean-600 transition">Mitgliedschaft</a>
+                <a href="#kontakt" class="bg-ocean-600 text-white px-6 py-2 rounded-full hover:bg-ocean-700 transition">Kontakt</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 hover:text-ocean-600">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <div class="px-4 pt-2 pb-4 space-y-2">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-ocean-600">Startseite</a>
+            <a href="#schnuppern" class="block py-2 text-gray-700 hover:text-ocean-600">Schnuppertauchen</a>
+            <a href="#ausbildung" class="block py-2 text-gray-700 hover:text-ocean-600">Ausbildung</a>
+            <a href="#aktivitaeten" class="block py-2 text-gray-700 hover:text-ocean-600">Aktivitäten</a>
+            <a href="#mitgliedschaft" class="block py-2 text-gray-700 hover:text-ocean-600">Mitgliedschaft</a>
+            <a href="#kontakt" class="block py-2 text-ocean-600 font-semibold">Kontakt</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="relative bg-gradient-to-br from-ocean-900 via-ocean-700 to-ocean-600 text-white">
+    <div class="absolute inset-0 bg-black opacity-30"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                Taucht mit uns ein in die<br>faszinierende Welt unter Wasser
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200">
+                Tauchclub Sharkey Divers Weilburg e.V.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#schnuppern" class="bg-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 transition shadow-lg">
+                    Jetzt Schnuppertauchen
+                </a>
+                <a href="#mitgliedschaft" class="bg-white text-ocean-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition shadow-lg">
+                    Mitglied werden
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0L60 10C120 20 240 40 360 46.7C480 53 600 47 720 43.3C840 40 960 40 1080 46.7C1200 53 1320 67 1380 73.3L1440 80V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V0Z" fill="#F9FAFB"/>
+        </svg>
+    </div>
+</section>
+
+<!-- Vereinsvorteile Section -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Deine Vorteile bei den Sharkey Divers
+            </h2>
+            <p class="text-xl text-gray-600">
+                Warum Vereinstauchen die beste Wahl ist
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Vorteil 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                <div class="text-4xl mb-4">🏊‍♂️</div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">VDST-Mitgliedschaft</h3>
+                <p class="text-gray-600">Inkl. Versicherung über den Landessportbund Hessen</p>
+            </div>
+
+            <!-- Vorteil 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                <div class="text-4xl mb-4">🌊</div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Kostenfreies Tauchen</h3>
+                <p class="text-gray-600">Im Verbandsgewässer Schönbach (HTSV) ohne Zusatzkosten</p>
+            </div>
+
+            <!-- Vorteil 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                <div class="text-4xl mb-4">💨</div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Günstige Füllungen</h3>
+                <p class="text-gray-600">Jederzeit Flaschenfüllungen zu Vorzugspreisen</p>
+            </div>
+
+            <!-- Vorteil 4 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                <div class="text-4xl mb-4">🎒</div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Leihausrüstung</h3>
+                <p class="text-gray-600">Kostenlose Ausrüstung für Neumitglieder</p>
+            </div>
+
+            <!-- Vorteil 5 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                <div class="text-4xl mb-4">🎓</div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Grundtauchschein inkl.</h3>
+                <p class="text-gray-600">Bereits im Jahresbeitrag enthalten</p>
+            </div>
+
+            <!-- Vorteil 6 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                <div class="text-4xl mb-4">✈️</div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Vereinsfahrten</h3>
+                <p class="text-gray-600">Gemeinsame Tauchurlaube und Ausflüge</p>
+            </div>
+
+            <!-- Vorteil 7 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                <div class="text-4xl mb-4">🚢</div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Messebesuche</h3>
+                <p class="text-gray-600">Gemeinsam zur boot Düsseldorf</p>
+            </div>
+
+            <!-- Vorteil 8 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+                <div class="text-4xl mb-4">👥</div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Gemeinschaft</h3>
+                <p class="text-gray-600">Austausch mit erfahrenen Tauchern</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Über uns Section -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Wer wir sind
+                </h2>
+                <p class="text-lg text-gray-600 mb-4">
+                    Mit Leidenschaft für den Tauchsport gehen wir einer der schönsten Freizeitbeschäftigungen nach – dem Unterwassersport in all seiner Vielfältigkeit. Vom Apnoetauchen über Sporttauchen bis hin zum Technischen Tauchen.
+                </p>
+                <p class="text-lg text-gray-600 mb-4">
+                    Als Mitglied im VDST (Verband Deutscher Sporttaucher) bilden wir nach den Richtlinien der CMAS (Welt Tauchsportverband) aus, also nach weltweit anerkannten Standards.
+                </p>
+                <p class="text-lg text-gray-600 mb-6">
+                    Der Tauchclub Sharkey Divers Weilburg e.V. ist Mitglied des Hessischen Tauchsportverbandes (HTSV) und im Landessportbund Hessen (LSB).
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <div class="bg-ocean-50 px-4 py-2 rounded-full">
+                        <span class="text-ocean-700 font-semibold">Seit 1996</span>
+                    </div>
+                    <div class="bg-ocean-50 px-4 py-2 rounded-full">
+                        <span class="text-ocean-700 font-semibold">CMAS-Ausbildung</span>
+                    </div>
+                    <div class="bg-ocean-50 px-4 py-2 rounded-full">
+                        <span class="text-ocean-700 font-semibold">VDST/HTSV</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gradient-to-br from-ocean-100 to-ocean-200 rounded-2xl h-96 flex items-center justify-center">
+                <div class="text-center">
+                    <div class="text-6xl mb-4">🤿</div>
+                    <p class="text-gray-600">Hier könnte dein Vereinsfoto stehen</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Schnuppertauchen Section -->
+<section id="schnuppern" class="py-16 bg-ocean-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Schnuppertauchen
+            </h2>
+            <p class="text-xl text-gray-600">
+                Dein erster Schritt in die Unterwasserwelt
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="bg-gradient-to-br from-ocean-200 to-ocean-300 rounded-2xl h-96 flex items-center justify-center">
+                <div class="text-center">
+                    <div class="text-6xl mb-4">🏊‍♀️</div>
+                    <p class="text-gray-700 font-semibold">Pool-Schnuppertauchen</p>
+                </div>
+            </div>
+            <div>
+                <p class="text-lg text-gray-600 mb-6">
+                    Du hast Interesse am Tauchsport, bist aber noch nicht ganz sicher ob es auch das Richtige für dich ist oder ob du dich unter Wasser auch wohl fühlst?
+                </p>
+                <p class="text-lg text-gray-600 mb-6">
+                    Kein Problem – genau dafür gibt es das Schnuppertauchen!
+                </p>
+                
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-start">
+                        <div class="text-2xl mr-4">✓</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">1:1 Betreuung</h4>
+                            <p class="text-gray-600">Der Tauchlehrer bereitet die komplette Ausrüstung vor und betreut dich persönlich</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-2xl mr-4">✓</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Keine Vorkenntnisse nötig</h4>
+                            <p class="text-gray-600">Mitbringen musst du lediglich Badesachen und gute Laune</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-2xl mr-4">✓</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Keine ärztliche Untersuchung</h4>
+                            <p class="text-gray-600">Erforderlich ist nur die Eigenauskunft zum Gesundheitszustand</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#kontakt" class="inline-block bg-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 transition shadow-lg">
+                    Schnuppertauchen anfragen
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ausbildung Section -->
+<section id="ausbildung" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Tauchausbildung
+            </h2>
+            <p class="text-xl text-gray-600">
+                Von der ersten Schwimmbadübung bis zum Gold-Brevet
+            </p>
+        </div>
+
+        <div class="bg-orange-50 border-l-4 border-orange-500 p-6 mb-12 rounded-r-lg">
+            <p class="text-lg text-gray-800">
+                <span class="font-bold">Besonderheit:</span> Der Grundtauchschein ist bereits in deinem Jahresbeitrag enthalten – du kannst also ohne Extrakosten mit der Ausbildung starten!
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Grundtauchschein -->
+            <div class="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl border-2 border-gray-200">
+                <div class="text-3xl mb-4">🎯</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Grundtauchschein</h3>
+                <p class="text-gray-600 mb-4">Grundkenntnisse für sicheres Tauchen mit und ohne Gerät</p>
+                <div class="text-sm text-gray-500">
+                    <p>📍 Schwimmbad</p>
+                    <p class="font-semibold text-green-600">✓ Im Beitrag enthalten</p>
+                </div>
+            </div>
+
+            <!-- DTSA Bronze -->
+            <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl border-2 border-orange-300">
+                <div class="text-3xl mb-4">🥉</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">DTSA Bronze</h3>
+                <h4 class="text-sm font-semibold text-orange-700 mb-2">CMAS *</h4>
+                <p class="text-gray-600 mb-4">Teilnahme an geführten Tauchgängen</p>
+                <div class="text-sm text-gray-500">
+                    <p>📍 Freigewässer Schönbach</p>
+                </div>
+            </div>
+
+            <!-- DTSA Silber -->
+            <div class="bg-gradient-to-br from-gray-200 to-gray-300 p-6 rounded-xl border-2 border-gray-400">
+                <div class="text-3xl mb-4">🥈</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">DTSA Silber</h3>
+                <h4 class="text-sm font-semibold text-gray-700 mb-2">CMAS **</h4>
+                <p class="text-gray-600 mb-4">Selbstständige Planung und Durchführung</p>
+                <div class="text-sm text-gray-500">
+                    <p>📍 Freigewässer</p>
+                </div>
+            </div>
+
+            <!-- DTSA Gold -->
+            <div class="bg-gradient-to-br from-yellow-100 to-yellow-200 p-6 rounded-xl border-2 border-yellow-400">
+                <div class="text-3xl mb-4">🥇</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">DTSA Gold</h3>
+                <h4 class="text-sm font-semibold text-yellow-700 mb-2">CMAS ***</h4>
+                <p class="text-gray-600 mb-4">Tauchen unter erschwerten Bedingungen</p>
+                <div class="text-sm text-gray-500">
+                    <p>📍 Abgeschlossene Ausbildung</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 bg-ocean-50 p-8 rounded-xl">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Sonderbrevets</h3>
+            <p class="text-gray-600 mb-6">
+                Zusätzlich bieten wir Kurse zum Erwerb von Sonderbrevets an, die deinen taucherischen Horizont erweitern:
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <div class="text-2xl mb-2">🧭</div>
+                    <p class="text-sm font-semibold">Orientierung</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <div class="text-2xl mb-2">👥</div>
+                    <p class="text-sm font-semibold">Gruppenführung</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <div class="text-2xl mb-2">🌙</div>
+                    <p class="text-sm font-semibold">Nachttauchen</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <div class="text-2xl mb-2">🚢</div>
+                    <p class="text-sm font-semibold">Wracktauchen</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <div class="text-2xl mb-2">💨</div>
+                    <p class="text-sm font-semibold">Nitrox</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <div class="text-2xl mb-2">🎒</div>
+                    <p class="text-sm font-semibold">Tarierung</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <div class="text-2xl mb-2">🔦</div>
+                    <p class="text-sm font-semibold">Lampen</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <div class="text-2xl mb-2">❄️</div>
+                    <p class="text-sm font-semibold">Eistauchen</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Kontakt Section -->
+<section id="kontakt" class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Kontakt
+            </h2>
+            <p class="text-xl text-gray-600">
+                Wir freuen uns auf deine Nachricht
+            </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-8">
+            <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Vorname</label>
+                        <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-500 focus:border-transparent" placeholder="Max">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Nachname</label>
+                        <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-500 focus:border-transparent" placeholder="Mustermann">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">E-Mail</label>
+                    <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-500 focus:border-transparent" placeholder="max@beispiel.de">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Telefon (optional)</label>
+                    <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-500 focus:border-transparent" placeholder="0123 456789">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Betreff</label>
+                    <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-500 focus:border-transparent">
+                        <option>Schnuppertauchen</option>
+                        <option>Mitgliedschaft</option>
+                        <option>Ausbildung</option>
+                        <option>Allgemeine Anfrage</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Nachricht</label>
+                    <textarea rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-500 focus:border-transparent" placeholder="Deine Nachricht..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-ocean-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-ocean-700 transition">
+                    Nachricht senden
+                </button>
+            </form>
+
+            <div class="mt-8 pt-8 border-t border-gray-200">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-2">1. Vorsitzender</h3>
+                        <p class="text-gray-600">Markus Schuster</p>
+                        <p class="text-gray-600">Am weißen Rain 4</p>
+                        <p class="text-gray-600">35789 Weilmünster</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Direktkontakt</h3>
+                        <p class="text-gray-600">📞 06472 / 911707</p>
+                        <p class="text-gray-600">✉️ info@sharkey-divers.de</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-ocean-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">🦈 Sharkey Divers</h3>
+                <p class="text-gray-300">Tauchclub Weilburg e.V.</p>
+                <p class="text-gray-300 text-sm mt-4">Seit 1996</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Navigation</h4>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="text-gray-300 hover:text-white transition">Startseite</a></li>
+                    <li><a href="#schnuppern" class="text-gray-300 hover:text-white transition">Schnuppertauchen</a></li>
+                    <li><a href="#ausbildung" class="text-gray-300 hover:text-white transition">Ausbildung</a></li>
+                    <li><a href="#kontakt" class="text-gray-300 hover:text-white transition">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Mitgliedschaften</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li>VDST</li>
+                    <li>HTSV</li>
+                    <li>LSB Hessen</li>
+                    <li>CMAS</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Rechtliches</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-300 hover:text-white transition">Impressum</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white transition">Datenschutz</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white transition">Satzung</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-ocean-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2025 Tauchclub Sharkey Divers Weilburg e.V. Alle Rechte vorbehalten.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile Menu Toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Smooth Scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    });
+</script>
+```
+
+</body>
+</html>
