@@ -2,7 +2,7 @@ titel: "Tauchausbildung"
 untertitel: "Von der ersten Schwimmbadübung bis zum Gold-Brevet"
 
 highlight:
-  text: "Der Grundtauchschein ist bereits in deinem Jahresbeitrag enthalten – du kannst also ohne Extrakosten mit der Ausbildung starten!"
+  text: "Unsere erfahrenen Tauchlehrer aus dem Verein begleiten dich auf deinem Weg vom Anfänger bis zum erfahrenen Taucher!"
 
 stufen:
   - id: "grundtauchschein"
@@ -10,8 +10,6 @@ stufen:
     name: "Grundtauchschein"
     cmas: null
     beschreibung: "Grundkenntnisse für sicheres Tauchen mit und ohne Gerät"
-    ort: "Schwimmbad"
-    im_beitrag: true
     gradient: "from-gray-50 to-gray-100"
     border: "border-gray-200"
 
@@ -20,8 +18,6 @@ stufen:
     name: "DTSA Bronze"
     cmas: "CMAS *"
     beschreibung: "Teilnahme an geführten Tauchgängen"
-    ort: "Freigewässer Schönbach"
-    im_beitrag: false
     gradient: "from-orange-50 to-orange-100"
     border: "border-orange-300"
     cmas_color: "text-orange-700"
@@ -31,8 +27,6 @@ stufen:
     name: "DTSA Silber"
     cmas: "CMAS **"
     beschreibung: "Selbstständige Planung und Durchführung"
-    ort: "Freigewässer"
-    im_beitrag: false
     gradient: "from-gray-200 to-gray-300"
     border: "border-gray-400"
     cmas_color: "text-gray-700"
@@ -42,8 +36,6 @@ stufen:
     name: "DTSA Gold"
     cmas: "CMAS ***"
     beschreibung: "Tauchen unter erschwerten Bedingungen"
-    ort: "Abgeschlossene Ausbildung"
-    im_beitrag: false
     gradient: "from-yellow-100 to-yellow-200"
     border: "border-yellow-400"
     cmas_color: "text-yellow-700"
