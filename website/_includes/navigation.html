@@ -1,0 +1,44 @@
+<!-- Navigation -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <a href="{{ '/' | relative_url }}" class="text-2xl font-bold text-ocean-700">
+                    <span class="text-ocean-600">{{ site.club_emoji }}</span> {{ site.club_short_name }}
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                {% for item in site.data.navigation.main %}
+                <a href="{{ item.url }}" class="text-gray-700 hover:text-ocean-600 transition">{{ item.name }}</a>
+                {% endfor %}
+                <a href="{{ site.data.navigation.cta.url }}" class="bg-ocean-600 text-white px-6 py-2 rounded-full hover:bg-ocean-700 transition">
+                    {{ site.data.navigation.cta.name }}
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 hover:text-ocean-600">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <div class="px-4 pt-2 pb-4 space-y-2">
+            {% for item in site.data.navigation.main %}
+            <a href="{{ item.url }}" class="block py-2 text-gray-700 hover:text-ocean-600">{{ item.name }}</a>
+            {% endfor %}
+            <a href="{{ site.data.navigation.cta.url }}" class="block py-2 text-ocean-600 font-semibold">
+                {{ site.data.navigation.cta.name }}
+            </a>
+        </div>
+    </div>
+</nav>

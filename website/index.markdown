@@ -1,6 +1,5 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+title: "Startseite"
+description: "Tauchclub Sharkey Divers Weilburg e.V. - Deine Adresse für Tauchsport, Ausbildung und Vereinsfahrten. VDST-Mitgliedschaft, Schnuppertauchen und mehr."
 ---

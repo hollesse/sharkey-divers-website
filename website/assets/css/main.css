@@ -1,0 +1,22 @@
+/* Sharkey Divers - Custom Styles */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom utilities */
+.wave-bottom {
+    position: relative;
+}
+
+.wave-bottom svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

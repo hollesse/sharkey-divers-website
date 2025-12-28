@@ -1,0 +1,48 @@
+<!-- Footer -->
+<footer class="bg-ocean-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Verein -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">{{ site.club_emoji }} {{ site.club_short_name }}</h3>
+                <p class="text-gray-300">{{ site.club_name }}</p>
+                <p class="text-gray-300 text-sm mt-4">Seit {{ site.founding_year }}</p>
+            </div>
+
+            <!-- Navigation -->
+            <div>
+                <h4 class="font-semibold mb-4">Navigation</h4>
+                <ul class="space-y-2">
+                    {% for item in site.data.navigation.main %}
+                    <li><a href="{{ item.url }}" class="text-gray-300 hover:text-white transition">{{ item.name }}</a></li>
+                    {% endfor %}
+                    <li><a href="{{ site.data.navigation.cta.url }}" class="text-gray-300 hover:text-white transition">{{ site.data.navigation.cta.name }}</a></li>
+                </ul>
+            </div>
+
+            <!-- Mitgliedschaften -->
+            <div>
+                <h4 class="font-semibold mb-4">Mitgliedschaften</h4>
+                <ul class="space-y-2 text-gray-300">
+                    {% for membership in site.memberships %}
+                    <li title="{{ membership.full_name }}">{{ membership.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <!-- Rechtliches -->
+            <div>
+                <h4 class="font-semibold mb-4">Rechtliches</h4>
+                <ul class="space-y-2">
+                    <li><a href="{{ '/impressum' | relative_url }}" class="text-gray-300 hover:text-white transition">Impressum</a></li>
+                    <li><a href="{{ '/datenschutz' | relative_url }}" class="text-gray-300 hover:text-white transition">Datenschutz</a></li>
+                    <li><a href="{{ '/satzung' | relative_url }}" class="text-gray-300 hover:text-white transition">Satzung</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-ocean-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+            <p>&copy; {{ 'now' | date: "%Y" }} {{ site.club_name }}. Alle Rechte vorbehalten.</p>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,70 @@
+titel: "Tauchausbildung"
+untertitel: "Von der ersten Schwimmbadübung bis zum Gold-Brevet"
+
+highlight:
+  text: "Der Grundtauchschein ist bereits in deinem Jahresbeitrag enthalten – du kannst also ohne Extrakosten mit der Ausbildung starten!"
+
+stufen:
+  - id: "grundtauchschein"
+    emoji: "🎯"
+    name: "Grundtauchschein"
+    cmas: null
+    beschreibung: "Grundkenntnisse für sicheres Tauchen mit und ohne Gerät"
+    ort: "Schwimmbad"
+    im_beitrag: true
+    gradient: "from-gray-50 to-gray-100"
+    border: "border-gray-200"
+
+  - id: "bronze"
+    emoji: "🥉"
+    name: "DTSA Bronze"
+    cmas: "CMAS *"
+    beschreibung: "Teilnahme an geführten Tauchgängen"
+    ort: "Freigewässer Schönbach"
+    im_beitrag: false
+    gradient: "from-orange-50 to-orange-100"
+    border: "border-orange-300"
+    cmas_color: "text-orange-700"
+
+  - id: "silber"
+    emoji: "🥈"
+    name: "DTSA Silber"
+    cmas: "CMAS **"
+    beschreibung: "Selbstständige Planung und Durchführung"
+    ort: "Freigewässer"
+    im_beitrag: false
+    gradient: "from-gray-200 to-gray-300"
+    border: "border-gray-400"
+    cmas_color: "text-gray-700"
+
+  - id: "gold"
+    emoji: "🥇"
+    name: "DTSA Gold"
+    cmas: "CMAS ***"
+    beschreibung: "Tauchen unter erschwerten Bedingungen"
+    ort: "Abgeschlossene Ausbildung"
+    im_beitrag: false
+    gradient: "from-yellow-100 to-yellow-200"
+    border: "border-yellow-400"
+    cmas_color: "text-yellow-700"
+
+sonderbrevets:
+  titel: "Sonderbrevets"
+  beschreibung: "Zusätzlich bieten wir Kurse zum Erwerb von Sonderbrevets an, die deinen taucherischen Horizont erweitern:"
+  liste:
+    - emoji: "🧭"
+      name: "Orientierung"
+    - emoji: "👥"
+      name: "Gruppenführung"
+    - emoji: "🌙"
+      name: "Nachttauchen"
+    - emoji: "🚢"
+      name: "Wracktauchen"
+    - emoji: "💨"
+      name: "Nitrox"
+    - emoji: "🎒"
+      name: "Tarierung"
+    - emoji: "🔦"
+      name: "Lampen"
+    - emoji: "❄️"
+      name: "Eistauchen"

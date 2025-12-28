@@ -1,0 +1,15 @@
+titel: "Wer wir sind"
+
+absaetze:
+  - "Mit Leidenschaft für den Tauchsport gehen wir einer der schönsten Freizeitbeschäftigungen nach – dem Unterwassersport in all seiner Vielfältigkeit. Vom Apnoetauchen über Sporttauchen bis hin zum Technischen Tauchen."
+  - "Als Mitglied im VDST (Verband Deutscher Sporttaucher) bilden wir nach den Richtlinien der CMAS (Welt Tauchsportverband) aus, also nach weltweit anerkannten Standards."
+  - "Der Tauchclub Sharkey Divers Weilburg e.V. ist Mitglied des Hessischen Tauchsportverbandes (HTSV) und im Landessportbund Hessen (LSB)."
+
+badges:
+  - text: "Seit 1996"
+  - text: "CMAS-Ausbildung"
+  - text: "VDST/HTSV"
+
+placeholder:
+  emoji: "🤿"
+  text: "Hier könnte dein Vereinsfoto stehen"

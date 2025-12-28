@@ -1,0 +1,27 @@
+titel: "Schnuppertauchen"
+untertitel: "Dein erster Schritt in die Unterwasserwelt"
+
+intro:
+  - "Du hast Interesse am Tauchsport, bist aber noch nicht ganz sicher ob es auch das Richtige für dich ist oder ob du dich unter Wasser auch wohl fühlst?"
+  - "Kein Problem – genau dafür gibt es das Schnuppertauchen!"
+
+features:
+  - icon: "✓"
+    titel: "1:1 Betreuung"
+    beschreibung: "Der Tauchlehrer bereitet die komplette Ausrüstung vor und betreut dich persönlich"
+
+  - icon: "✓"
+    titel: "Keine Vorkenntnisse nötig"
+    beschreibung: "Mitbringen musst du lediglich Badesachen und gute Laune"
+
+  - icon: "✓"
+    titel: "Keine ärztliche Untersuchung"
+    beschreibung: "Erforderlich ist nur die Eigenauskunft zum Gesundheitszustand"
+
+cta:
+  text: "Schnuppertauchen anfragen"
+  url: "#kontakt"
+
+placeholder:
+  emoji: "🏊‍♀️"
+  text: "Pool-Schnuppertauchen"

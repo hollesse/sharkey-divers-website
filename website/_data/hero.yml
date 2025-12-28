@@ -1,0 +1,10 @@
+titel: "Taucht mit uns ein in die<br>faszinierende Welt unter Wasser"
+untertitel: "Tauchclub Sharkey Divers Weilburg e.V."
+
+buttons:
+  - text: "Jetzt Schnuppertauchen"
+    url: "#schnuppern"
+    style: "primary"
+  - text: "Mitglied werden"
+    url: "#mitgliedschaft"
+    style: "secondary"

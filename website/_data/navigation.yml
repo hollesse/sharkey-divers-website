@@ -1,0 +1,15 @@
+main:
+  - name: "Startseite"
+    url: "#home"
+  - name: "Schnuppertauchen"
+    url: "#schnuppern"
+  - name: "Ausbildung"
+    url: "#ausbildung"
+  - name: "Aktivitäten"
+    url: "#aktivitaeten"
+  - name: "Mitgliedschaft"
+    url: "#mitgliedschaft"
+
+cta:
+  name: "Kontakt"
+  url: "#kontakt"

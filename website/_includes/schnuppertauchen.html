@@ -1,0 +1,45 @@
+<!-- Schnuppertauchen Section -->
+<section id="schnuppern" class="py-16 bg-ocean-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                {{ site.data.schnuppertauchen.titel }}
+            </h2>
+            <p class="text-xl text-gray-600">
+                {{ site.data.schnuppertauchen.untertitel }}
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="bg-gradient-to-br from-ocean-200 to-ocean-300 rounded-2xl h-96 flex items-center justify-center">
+                <div class="text-center">
+                    <div class="text-6xl mb-4">{{ site.data.schnuppertauchen.placeholder.emoji }}</div>
+                    <p class="text-gray-700 font-semibold">{{ site.data.schnuppertauchen.placeholder.text }}</p>
+                </div>
+            </div>
+            <div>
+                {% for absatz in site.data.schnuppertauchen.intro %}
+                <p class="text-lg text-gray-600 mb-6">
+                    {{ absatz }}
+                </p>
+                {% endfor %}
+
+                <div class="space-y-4 mb-8">
+                    {% for feature in site.data.schnuppertauchen.features %}
+                    <div class="flex items-start">
+                        <div class="text-2xl mr-4">{{ feature.icon }}</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">{{ feature.titel }}</h4>
+                            <p class="text-gray-600">{{ feature.beschreibung }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <a href="{{ site.data.schnuppertauchen.cta.url }}" class="inline-block bg-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 transition shadow-lg">
+                    {{ site.data.schnuppertauchen.cta.text }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
